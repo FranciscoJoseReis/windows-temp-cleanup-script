@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Script de Limpeza do Sistema</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      background-color: #f4f6f8;
+    }
+
+    header {
+      background: #1f2a44;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    section {
+      background: white;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #1f2a44;
+    }
+
+    ul {
+      line-height: 1.8;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 20px;
+      background: #27ae60;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .download-btn:hover {
+      background: #219150;
+    }
+
+    pre {
+      background: #eee;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    footer {
+      background: #1f2a44;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: #4fc3f7;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Script de Limpeza de Ficheiros Temporários</h1>
+    <p>Automação de Manutenção em Windows</p>
+  </header>
+
+  <section>
+    <h2>📚 Descrição</h2>
+    <p>
+      Este script automatiza a limpeza de ficheiros temporários do sistema operativo Windows,
+      ajudando a libertar espaço em disco e a melhorar o desempenho do sistema.
+    </p>
+  </section>
+
+  <section>
+    <h2>⚙️ Funcionalidades</h2>
+    <ul>
+      <li>Limpeza da pasta temporária do utilizador (%temp%)</li>
+      <li>Limpeza da pasta temporária do sistema (%systemroot%\temp)</li>
+      <li>Execução automática como administrador</li>
+      <li>Remoção de ficheiros e pastas</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>⚠️ Notas</h2>
+    <ul>
+      <li>Executar como administrador</li>
+      <li>Fechar aplicações antes da execução</li>
+      <li>Alguns ficheiros podem estar em uso</li>
+    </ul>
+  </section>
+
+    <section>
+    <h2>📥 Download</h2>
+    <p>Faz download do script para utilização no teu sistema:</p>
+
+    <!-- ALTERAR NOME DO FICHEIRO AQUI -->
+    <a class="download-btn" href="https://github.com/FranciscoJoseReis/windows-temp-cleanup-script/releases/tag/Windows_Temp_Cleanup_Script">
+      ⬇️ Transferir Script
+    </a>
+  </section>
+
+  <footer>
+    <div>
+      <small class="copyright">
+        Copyright&copy; 2025 - <span id="ano"></span> | Script de Limpeza do Sistema Designed by
+        <a href="https://rebrand.ly/portefolio" target="_blank" style="text-decoration: underline">Francisco Reis</a>
+      </small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+
+</html>
