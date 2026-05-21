@@ -2,7 +2,7 @@
 📚 Enquadramento
 O objetivo de este script é automatizar a limpeza de ficheiros temporários do sistema operativo Windows, contribuindo para a otimização do desempenho e libertação de espaço em disco.
 ________________________________________
-⚙️ Descrição do Funcionamento
+⚙️ Descrição do Funcionamento <br>
 O script executa várias operações de forma automática:
 🔹 Elevação de Privilégios
 •	Verifica se o script corre com permissões de administrador
@@ -42,7 +42,7 @@ ________________________________________
 •	Alguns ficheiros podem não ser removidos se estiverem em uso
 •	Recomenda-se fechar aplicações antes da execução
 ________________________________________
-🚀 Nota Final
+🚀 Nota Final  
 Este script demonstra a importância da automação na administração de sistemas, permitindo executar tarefas repetitivas de forma rápida, eficiente e segura.
 
 Link: https://github.com/FranciscoJoseReis/windows-temp-cleanup-script
