@@ -45,3 +45,5 @@ ________________________________________
 🚀 Nota Final
 Este script demonstra a importância da automação na administração de sistemas, permitindo executar tarefas repetitivas de forma rápida, eficiente e segura.
 
+Link: https://github.com/FranciscoJoseReis/windows-temp-cleanup-script
+
