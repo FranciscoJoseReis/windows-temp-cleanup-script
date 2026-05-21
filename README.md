@@ -1,8 +1,8 @@
-📄 Script - Limpeza de Ficheiros Temporários (Windows)
+📄 Script - Limpeza de Ficheiros Temporários (Windows)\
 📚 Enquadramento
 O objetivo de este script é automatizar a limpeza de ficheiros temporários do sistema operativo Windows, contribuindo para a otimização do desempenho e libertação de espaço em disco.
 ________________________________________
-⚙️ Descrição do Funcionamento <br>
+⚙️ Descrição do Funcionamento\
 O script executa várias operações de forma automática:
 🔹 Elevação de Privilégios
 •	Verifica se o script corre com permissões de administrador
@@ -26,18 +26,18 @@ ________________________________________
 •	Informa quando a limpeza é concluída com sucesso
 •	Utiliza pause para permitir a visualização do resultado
 ________________________________________
-🎯 Objetivo do Script
+🎯 Objetivo do Script\
 •	Automatizar tarefas de manutenção do sistema
 •	Libertar espaço em disco
 •	Melhorar o desempenho geral
 •	Aplicar boas práticas de administração de sistemas
 ________________________________________
-🛠️ Tecnologias Utilizadas
+🛠️ Tecnologias Utilizadas\
 •	Batch scripting (Windows CMD)
 •	Variáveis de ambiente do Windows
 •	Controlo de permissões (UAC)
 ________________________________________
-⚠️ Notas Importantes
+⚠️ Notas Importantes\
 •	Deve ser executado como administrador
 •	Alguns ficheiros podem não ser removidos se estiverem em uso
 •	Recomenda-se fechar aplicações antes da execução
