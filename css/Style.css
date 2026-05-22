@@ -1,0 +1,69 @@
+ body {
+      font-family: Arial;
+      margin: 0;
+      background-color: #f4f6f8;
+    }
+
+    header {
+      background: #1f2a44;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    section {
+      background: white;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #1f2a44;
+    }
+
+    ul {
+      line-height: 1.8;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 20px;
+      background: #27ae60;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .download-btn:hover {
+      background: #219150;
+    }
+
+    pre {
+      background: #eee;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    video {
+      width: 50%;
+      margin-top: 10px;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #1f2a44;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: #4fc3f7;
+    }
