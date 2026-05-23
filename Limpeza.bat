@@ -54,10 +54,9 @@ for /d %%p in ("%systemroot%\temp\*") do rd /s /q "%%p" >> "%LOGFILE%" 2>&1
 :: ==============================
 echo.
 echo Limpeza concluida com sucesso!
-echo Ver log em: %LOGFILE%
-
 echo ============================== >> "%LOGFILE%"
 echo Limpeza concluida em %date% %time% >> "%LOGFILE%"
 
 pause
+start %LOGFILE%
 exit
