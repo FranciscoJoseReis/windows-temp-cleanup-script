@@ -1,5 +1,10 @@
 @echo off
-:: Solicitar privilégios de administrador
+title Limpeza de Ficheiros Temporarios
+color 0A
+
+:: ==============================
+:: VERIFICAR ADMIN
+:: ==============================
 net session >nul 2>&1
 if %errorLevel% neq 0 (
     echo Solicitando privilegios de administrador...
@@ -14,20 +19,45 @@ if %errorLevel% neq 0 (
     if exist "%temp%\getadmin.vbs" ( del "%temp%\getadmin.vbs" )
     pushd "%CD%"
     CD /D "%~dp0"
-	
-	
-:: Os seus comandos aqui
-title Limpeza do Sistema
-echo A iniciar limpeza de ficheiros temporarios...
+:: ==============================
+:: LOG
+:: ==============================
+set LOGFILE=%~dp0cleanup_log.txt
 
-:: Limpa a pasta Temp do Utilizador
-del /s /f /q %temp%\*.*
-for /d %%p in ("%temp%\*") do rd /s /q "%%p"
-
-:: Limpa a pasta Temp do Windows
-del /s /f /q %systemroot%\temp\*.*
-for /d %%p in ("%systemroot%\temp\*") do rd /s /q "%%p"
+echo ============================== >> "%LOGFILE%"
+echo Limpeza iniciada em %date% %time% >> "%LOGFILE%"
+echo ============================== >> "%LOGFILE%"
 
 echo.
+echo A iniciar limpeza...
+echo.
+
+:: ==============================
+:: TEMP UTILIZADOR
+:: ==============================
+echo [1/2] Limpeza Temp do Utilizador...
+echo [1/2] >> "%LOGFILE%"
+
+del /s /f /q "%temp%\*.*" >> "%LOGFILE%" 2>&1
+for /d %%p in ("%temp%\*") do rd /s /q "%%p" >> "%LOGFILE%" 2>&1
+
+:: ==============================
+:: TEMP WINDOWS
+:: ==============================
+echo.
+echo [2/2] Limpeza Temp do Windows...
+echo [2/2] >> "%LOGFILE%"
+
+del /s /f /q "%systemroot%\temp\*.*" >> "%LOGFILE%" 2>&1
+for /d %%p in ("%systemroot%\temp\*") do rd /s /q "%%p" >> "%LOGFILE%" 2>&1
+
+:: ==============================
+echo.
 echo Limpeza concluida com sucesso!
+echo Ver log em: %LOGFILE%
+
+echo ============================== >> "%LOGFILE%"
+echo Limpeza concluida em %date% %time% >> "%LOGFILE%"
+
 pause
+exit
